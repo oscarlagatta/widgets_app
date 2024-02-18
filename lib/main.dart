@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:widgets_app/config/theme/app_theme.dart';
+import 'package:widgets_app/presentation/screens/home/home_screen.dart';
 
 void main() => runApp(const WidgetsMainApp());
 
@@ -9,18 +11,13 @@ class WidgetsMainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: AppTheme(
+        selectedColor: 8,
+      ).getTheme(),
       title: 'Material App',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Material App Bar'),
-        ),
-        body: const Center(
-          child: Text('Hello World'),
-        ),
-      ),
+      home: const HomeScreen(),
     );
   }
 }
-
 
 // git checkout -- .  -> will recover all up to the last commit.
