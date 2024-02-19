@@ -44,5 +44,11 @@ const appMenuItems = <MenuItem>[
     subTitle: 'Animated Stateful Widget',
     link: '/animated',
     icon: Icons.check_box_outlined,
+  ),
+  MenuItem(
+    title: 'Ui Controls and Tiles',
+    subTitle: 'A series of controls',
+    link: '/ui-controls',
+    icon: Icons.car_rental_outlined,
   )
 ];
