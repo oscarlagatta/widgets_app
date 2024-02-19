@@ -58,7 +58,7 @@ class _ControllerProgressIndicator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    // the stream builder will dispose the `stream` when the widest is destroyed
+    // the stream builder will dispose the `stream` when the widget is destroyed
     return StreamBuilder<double>(
       stream: Stream.periodic(const Duration(milliseconds: 300), (value) {
         return (value *2) / 100;
