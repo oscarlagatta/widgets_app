@@ -28,7 +28,7 @@ class SnackbarScreen extends StatelessWidget {
         return AlertDialog(
           title: const Text('Are you sure?'),
           content: const Text(
-              'alksdjfla ksjdflkajsd lkfjasd;lf jka;slkfj ;ldjsaldaksjlk;fjds;lfjad'),
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus purus in massa tempor nec. Gravida arcu ac tortor dignissim convallis aenean et tortor. Cras adipiscing enim eu turpis egestas. Duis at tellus at urna condimentum mattis pellentesque. Id consectetur purus ut faucibus. Rutrum quisque non tellus orci ac. Feugiat nibh sed pulvinar proin gravida hendrerit. Est placerat in egestas erat. Mattis molestie a iaculis at erat pellentesque adipiscing commodo elit. Ut lectus arcu bibendum at varius vel pharetra. Imperdiet nulla malesuada pellentesque elit eget gravida cum sociis natoque. Sit amet nulla facilisi morbi tempus. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Sed elementum tempus egestas sed sed.'),
           actions: [
             TextButton(
               onPressed: () {
@@ -69,7 +69,7 @@ class SnackbarScreen extends StatelessWidget {
               onPressed: () {
                 showAboutDialog(
                   context: context,
-                  children: [const Text('Lorem Ipsum asdfa etc tetsf')],
+                  children: [const Text('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')],
                 );
               },
               child: Text('Used Licenses'),
