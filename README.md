@@ -1,16 +1,47 @@
-# widgets_app
+# Flutter Widgets Application
 
-A new Flutter project.
+This is a widget oriented Flutter application developed in Dart. The aim is to showcase a range of widgets that can be used in the development of mobile applications using the Flutter SDK.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## Features
 
-A few resources to get you started if this is your first Flutter project:
+- Main Dart application showcasing a range of flutter widgets.
+- Custom configured router named appRouter.
+- Custom theme using AppTheme.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Installation
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Ensure that you have Flutter and Dart set up and installed on your machine. Once done, run the following command in the root directory to install necessary dependencies
+```
+flutter pub get
+```
+
+## Usage
+To launch the application in the development mode, navigate to the root directory of the project and run in your terminal:
+
+```
+flutter run
+```
+
+## Application Entry Point
+The primary entry point of the application is a WidgetsMainApp class which is a StatelessWidget.
+
+```
+class WidgetsMainApp extends StatelessWidget {
+  const WidgetsMainApp({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp.router(
+      title: 'Flutter Widgets',
+      routerConfig: appRouter,
+      debugShowCheckedModeBanner: false,
+      theme: AppTheme(
+        selectedColor: 3,
+      ).getTheme(),
+    );
+  }
+}
+```
+
+- Where appRoute is defined elsewhere in the project and contains all the paths to the different widgets.
+- AppTheme is a class that wraps the project's theme information.
