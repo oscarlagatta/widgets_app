@@ -26,5 +26,35 @@ const appMenuItems = <MenuItem>[
     subTitle: 'Styled Container',
     link: '/cards',
     icon: Icons.credit_card,
+  ),
+  MenuItem(
+    title: 'Progress Indicators',
+    subTitle: 'General and Controlled',
+    link: '/progress',
+    icon: Icons.refresh_rounded,
+  ),
+  MenuItem(
+    title: 'Snackbars',
+    subTitle: 'Snackbars',
+    link: '/snackbars',
+    icon: Icons.info_outline,
+  ),
+  MenuItem(
+    title: 'Animated Container',
+    subTitle: 'Animated Stateful Widget',
+    link: '/animated',
+    icon: Icons.check_box_outlined,
+  ),
+  MenuItem(
+    title: 'Ui Controls and Tiles',
+    subTitle: 'A series of controls',
+    link: '/ui-controls',
+    icon: Icons.car_rental_outlined,
+  ),
+  MenuItem(
+    title: 'Application Intro',
+    subTitle: 'Tutorial',
+    link: '/tutorial',
+    icon: Icons.accessibility_rounded,
   )
 ];
