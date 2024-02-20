@@ -94,18 +94,20 @@ class _AppTutorialScreenState extends State<AppTutorialScreen> {
               onPressed: () => context.pop(),
             ),
           ),
-          endReached ? Positioned(
-            bottom: 30,
-            right: 30,
-            child: FadeInRight(
-              from: 15,
-              delay: const Duration(seconds: 1),
-              child: FilledButton(
-                child: const Text('Start'),
-                onPressed: () => context.pop(),
-              ),
-            ),
-          ) : SizedBox(),
+          endReached
+              ? Positioned(
+                  bottom: 30,
+                  right: 30,
+                  child: FadeInRight(
+                    from: 15,
+                    delay: const Duration(seconds: 1),
+                    child: FilledButton(
+                      child: const Text('Start'),
+                      onPressed: () => context.pop(),
+                    ),
+                  ),
+                )
+              : SizedBox(),
         ],
       ),
     );
